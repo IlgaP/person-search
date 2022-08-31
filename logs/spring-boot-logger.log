@@ -1,0 +1,8 @@
+
+
+2022-08-31 16:32:04,833 INFO com.example.personapp.service.PersonService [http-nio-8080-exec-2] Person with personal ID: 852973-593341 and date of birth: 1988-09-13 was found! 
+2022-08-31 16:32:36,118 INFO com.example.personapp.service.PersonService [http-nio-8080-exec-1] Person with personal ID: 886696-021791 and date of birth: 1977-08-11 was found! 
+2022-08-31 16:33:06,101 INFO com.example.personapp.service.PersonService [http-nio-8080-exec-3] Person with personal: ID 111-111 and date of birth: 1900-02-11 was NOT found! 
+2022-08-31 17:18:54,233 INFO com.example.personapp.service.PersonService [http-nio-8080-exec-10] Person with personal ID: 852973-593341 and date of birth: 1988-09-13 was found! 
+2022-08-31 17:18:55,660 INFO com.example.personapp.service.PersonService [http-nio-8080-exec-2] Person with personal ID: 852973-593341 and date of birth: 1988-09-13 was found! 
+
