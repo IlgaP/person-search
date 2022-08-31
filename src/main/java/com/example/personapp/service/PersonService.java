@@ -26,12 +26,15 @@ public class PersonService {
 
     public Person getPerson(String personalId, LocalDate dateOfBirth) {
 
-        String personFound = "Person with personal ID: " + personalId + " and date of birth: " + dateOfBirth + " was found! ";
+
         String personNotFound = "Person with personal: ID " + personalId + " and date of birth: " + dateOfBirth + " was NOT found! ";
 
         Optional<Person> person = personRepository.findByPersonalIdAndDateOfBirth(personalId, dateOfBirth);
         if (person.isPresent()) {
+            String personFound = "Person with personal ID: " + personalId + " and date of birth: " + dateOfBirth + " was found! ";
             logger.info(personFound);
+        } else {
+            logger.info(personNotFound);
         }
 
         return person.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, personNotFound));
